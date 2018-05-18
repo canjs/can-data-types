@@ -37,5 +37,8 @@ module.exports = canReflect.assignSymbols(toDate,{
 	"can.ComparisonSetType": DateStringSet,
     "can.getName": function(){
         return "MaybeDate";
-    }
+    },
+	"can.isMember": function(value) {
+		return value == null || (value instanceof Date);
+	}
 });

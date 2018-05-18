@@ -20,5 +20,8 @@ module.exports = canReflect.assignSymbols(toBoolean,{
 	},
     "can.getName": function(){
         return "MaybeBoolean";
-    }
+    },
+	"can.isMember": function(value) {
+		return value == null || typeof value === "boolean";
+	}
 });

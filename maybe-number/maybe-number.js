@@ -17,5 +17,8 @@ module.exports = canReflect.assignSymbols(toNumber,{
 	},
     "can.getName": function(){
         return "MaybeNumber";
-    }
+    },
+	"can.isMember": function(value) {
+		return value == null || typeof value === "number";
+	}
 });
