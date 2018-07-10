@@ -1,3 +1,4 @@
+"use strict";
 var MaybeBoolean = require("./maybe-boolean/maybe-boolean"),
     MaybeDate = require("./maybe-date/maybe-date"),
     MaybeNumber = require("./maybe-number/maybe-number"),
