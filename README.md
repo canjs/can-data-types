@@ -5,8 +5,6 @@
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/canjs/can-data-types/blob/master/LICENSE)
 [![npm version](https://badge.fury.io/js/can-data-types.svg)](https://www.npmjs.com/package/can-data-types)
 [![Travis build status](https://travis-ci.org/canjs/can-data-types.svg?branch=master)](https://travis-ci.org/canjs/can-data-types)
-[![AppVeyor build status](https://ci.appveyor.com/api/projects/status/github/canjs/can-data-types?branch=master&svg=true)](https://ci.appveyor.com/project/matthewp/can-data-types)
-[![Coverage status](https://coveralls.io/repos/github/canjs/can-data-types/badge.svg?branch=master)](https://coveralls.io/github/canjs/can-data-types?branch=master)
 [![Greenkeeper badge](https://badges.greenkeeper.io/canjs/can-data-types.svg)](https://greenkeeper.io/)
 
 Reusable special data types
