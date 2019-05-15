@@ -26,6 +26,12 @@ var checkIsNaN = {
 	check: isNaN
 };
 
+var checkDateMatchesNumber = {
+	check: function(date, num) {
+		QUnit.assert.strictEqual(date.getTime(), num, "Converted number to date");
+	}
+};
+
 var matrix = {
 	check: {
 		check: strictEqual,
@@ -43,11 +49,18 @@ var matrix = {
 	}
 };
 
+var dateAsNumber = new Date(1815, 11, 10).getTime();
+
 var testCases = [
 	{ Type: Boolean, value: true },
 	{ Type: Boolean, value: false },
 	{ Type: Number, value: 23 },
 	{ Type: String, value: "foo" },
+	{
+		Type: Date, value: dateAsNumber,
+		convert: checkDateMatchesNumber,
+		maybeConvert: checkDateMatchesNumber
+	},
 
 	// Can convert types
 	{ Type: Number, value: "33" },
