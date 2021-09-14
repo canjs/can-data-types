@@ -16,9 +16,9 @@ module.exports = canReflect.assignSymbols(toString,{
 			values: [String, undefined, null]
 		};
 	},
-    "can.getName": function(){
-        return "MaybeString";
-    },
+        "can.getName": function(){
+                return "MaybeString";
+        },
 	"can.isMember": function(value) {
 		return value == null || typeof value === "string";
 	}
